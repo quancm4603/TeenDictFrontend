@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/cerulean/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Averia+Serif+Libre&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body style="background:rgb(242,242,242);color:#55595c;">
-    <header>
-        <nav class="navbar navbar-expand-md bg-body">
-            <div class="container-fluid"><a class="navbar-brand" href="index.html" style="width: 10%;font-weight: bold;font-size: 23px;text-align: center;">Teen Dict</a>
+    <header style="background-color: inherit;">
+        <nav class="navbar navbar-expand-md bg-body" style="background: linear-gradient(90deg, #FCF5EC, #BDDFF6);">
+            <div class="container-fluid"><a class="navbar-brand fs-1" href="#" style="width: 10%;font-weight: bold;font-size: 23px;text-align: center;">TeenDict</a>
                 <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="navbar-nav ms-auto" style="width: 30%;margin-left: -7.4219px;height: 100%;">
-                        <li class="nav-item" style="width: 45%;height: 100%;margin-right: 0px;"></li>
-                        <li class="nav-item" style="width: 45%;height: 100%;"><a class="btn btn-dark text-center" role="button" style="padding: 0;padding-top: 10px;padding-bottom: 10px;border-width: 1px;height: 100%;width: 100%;margin: 0px;font-size: 14px;line-height: 20px;letter-spacing: 1px;" href="login.html">Đăng Xuất</a></li>
+                    <ul class="navbar-nav justify-content-between ms-auto" style="width: 50%;margin-left: -7.4219px;height: 100%;">
+                        <li class="nav-item" style="width: 30%;height: 100%;margin-right: 0px;"></li>
+                        <li class="nav-item" style="width: 30%;height: 100%;margin-right: 0px;"></li>
+                        <li class="nav-item" style="width: 30%;height: 100%;"><a class="btn btn-dark text-center" role="button" style="padding: 0;padding-top: 10px;padding-bottom: 10px;border-width: 1px;height: 100%;width: 100%;margin: 0px;font-size: 14px;line-height: 20px;letter-spacing: 1px;" href="login.html">Đăng Xuất</a></li>
                     </ul>
                 </div>
             </div>
@@ -33,23 +35,23 @@
                     <div class="card-body" style="width: 100%;height: 100%;min-height: 0px;padding: 0;margin: 0;">
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-8" style="transform: scale(1);width: 100%;">
-                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Keyword *</strong></label><input class="form-control form-control" type="text" id="service_name" name="name" placeholder="Nhập keyword" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Keyword *</strong></label><input class="form-control form-control" type="text" id="service_name" name="word" placeholder="Nhập keyword" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
                             </div>
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-8" style="transform: scale(1);width: 100%;">
-                                <div class="mb-3" style="width: 100%;margin: 2px;padding: 0;"><label class="form-label form-label" for="client_description"><strong>Định nghĩa *</strong></label><textarea class="form-control form-control" id="service_description-1" name="description" placeholder="Nhập định nghĩa" required="" rows="4" style="color: rgb(0,0,0);height: 100px;width: 100%;"></textarea></div>
+                                <div class="mb-3" style="width: 100%;margin: 2px;padding: 0;"><label class="form-label form-label" for="client_description"><strong>Định nghĩa *</strong></label><textarea class="form-control form-control" id="service_description-1" name="definition" placeholder="Nhập định nghĩa" required="" rows="4" style="color: rgb(0,0,0);height: 100px;width: 100%;"></textarea></div>
                             </div>
                         </div>
                         <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                             <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-8" style="transform: scale(1);width: 100%;">
-                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Nguồn gốc *</strong></label><input class="form-control form-control" type="text" id="service_name-1" name="name" placeholder="Nhập nguồn gốc" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
+                                <div class="mb-3"><label class="form-label form-label" for="service_name"><strong>Nguồn gốc *</strong></label><input class="form-control form-control" type="text" id="service_name-1" name="original" placeholder="Nhập nguồn gốc" required="" style="border-color:rgb(0,0,0);color:rgb(0,0,0);"></div>
                             </div>
                         </div>
                     </div>
                     <div class="row" style="width: 100%;margin: 2px;padding: 0;">
                         <div class="col-sm-12 col-md-8 col-lg-8 col-xxl-8" style="transform: scale(1);width: 100%;">
-                            <div class="mb-3" style="width: 100%;margin: 2px;padding: 0;"><label class="form-label form-label" for="client_description"><strong>Ví dụ *</strong></label><textarea class="form-control form-control" id="service_description-2" name="description" placeholder="Nhập ví dụ" required="" rows="4" style="color: rgb(0,0,0);height: 100px;width: 100%;"></textarea></div>
+                            <div class="mb-3" style="width: 100%;margin: 2px;padding: 0;"><label class="form-label form-label" for="client_description"><strong>Ví dụ *</strong></label><textarea class="form-control form-control" id="service_description-2" name="example" placeholder="Nhập ví dụ" required="" rows="4" style="color: rgb(0,0,0);height: 100px;width: 100%;"></textarea></div>
                         </div>
                     </div>
                 </div>
@@ -57,7 +59,7 @@
             </form>
         </div>
     </div>
-    <footer class="text-center" style="background: #ffffff;">
+    <footer class="text-center fixed-bottom-footer" style="background: linear-gradient(90deg, #FCF5EC, #BDDFF6);">
         <div class="container text-muted py-4 py-lg-5" style="padding: 0px 12px;">
             <ul class="list-inline">
                 <li class="list-inline-item me-4"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-facebook">
